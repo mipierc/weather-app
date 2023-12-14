@@ -1,7 +1,7 @@
 name: Run uncrustify every day
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs at midnight UTC every day
+    - cron: '*/5 * * * *' # Runs every 5 minutes
 jobs:
   run-uncrustify:
     runs-on: ubuntu-latest
